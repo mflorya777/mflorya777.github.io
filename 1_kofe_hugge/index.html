@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="КОФЕХЮГГЕ — сеть кофеен в Нижнем Новгороде, вдохновлённых Данией. Ароматный кофе, свежая выпечка и атмосфера хюгге." />
+  <title>КОФЕХЮГГЕ — счастье в кофейной чашке</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a class="logo" href="#top" aria-label="КОФЕХЮГГЕ — на главную">
+      <img src="assets/logo.jpg" alt="" width="40" height="40" />
+      <span>КОФЕХЮГГЕ</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#about">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#locations">Локации</a>
+      <a href="#contact">Контакты</a>
+      <a class="nav-cta" href="#feedback">Написать нам</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/hero.jpg" alt="" class="hero-img" />
+        <div class="hero-veil"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-brand reveal">К&nbsp;О&nbsp;Ф&nbsp;Е&nbsp;Х&nbsp;Ю&nbsp;Г&nbsp;Г&nbsp;Е</p>
+        <h1 class="hero-title reveal">Счастье<br />в кофейной чашке</h1>
+        <p class="hero-lead reveal">Сеть кофеен в Нижнем Новгороде, вдохновлённых Данией. Ароматный кофе, свежая выпечка и атмосфера хюгге — простого счастья в моменте.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#locations">Найти кофейню</a>
+          <a class="btn btn-ghost" href="#about">Узнать больше</a>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#about" aria-label="Листать вниз">
+        <span>Листать</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow reveal">О КОФЕХЮГГЕ</p>
+          <h2 class="section-title reveal">Частичка уюта<br />в каждом визите</h2>
+          <p class="section-text reveal">Наш слоган и девиз по жизни — «счастье в кофейной чашке». Мы стремимся подарить каждому гостю частичку счастья, уюта и спокойствия — ту самую датскую атмосферу хюгге, которая делает обычный день особенным.</p>
+          <ul class="about-points">
+            <li class="reveal"><strong>Скандинавский дух</strong><span>Спокойный ритм, тёплый свет и внимание к деталям</span></li>
+            <li class="reveal"><strong>Свежая выпечка</strong><span>Каждый день — ароматные круассаны и сладкие акценты</span></li>
+            <li class="reveal"><strong>Город рядом</strong><span>Набережная, парки и дворы — кофе там, где вы есть</span></li>
+          </ul>
+        </div>
+        <div class="about-visual reveal">
+          <figure class="about-shot about-shot--main">
+            <img src="assets/about-1.jpg" alt="Интерьер кофейни КОФЕХЮГГЕ" loading="lazy" />
+          </figure>
+          <figure class="about-shot about-shot--side">
+            <img src="assets/about-2.jpg" alt="Чашка кофе в КОФЕХЮГГЕ" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="ritual section" id="ritual">
+      <div class="container">
+        <div class="ritual-head">
+          <p class="eyebrow reveal">АТМОСФЕРА</p>
+          <h2 class="section-title reveal">Маленькие ритуалы большого дня</h2>
+          <p class="section-text reveal">Хюгге — это не декорация. Это пауза с любимым напитком, разговор без спешки и вкус, который возвращает в момент «здесь и сейчас».</p>
+        </div>
+        <div class="ritual-strip">
+          <article class="ritual-item reveal">
+            <span class="ritual-num">01</span>
+            <h3>Утро с эспрессо</h3>
+            <p>Бодрящий старт на набережной или по пути в парк</p>
+          </article>
+          <article class="ritual-item reveal">
+            <span class="ritual-num">02</span>
+            <h3>Дневная пауза</h3>
+            <p>Капучино и выпечка — короткая передышка между делами</p>
+          </article>
+          <article class="ritual-item reveal">
+            <span class="ritual-num">03</span>
+            <h3>Вечерний уют</h3>
+            <p>Тёплый свет, спокойный разговор и любимый авторский напиток</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu section" id="menu">
+      <div class="container">
+        <div class="menu-head">
+          <p class="eyebrow reveal">ЧТО ГОТОВИМ</p>
+          <h2 class="section-title reveal">Кофе, выпечка<br />и настроение</h2>
+          <p class="section-text reveal">Классика и сезонные позиции — от эспрессо до авторских напитков. Актуальный ассортимент уточняйте в вашей любимой точке.</p>
+        </div>
+        <div class="menu-board">
+          <article class="menu-row reveal">
+            <div>
+              <h3>Эспрессо</h3>
+              <p>Плотный, чистый вкус — основа любого утра</p>
+            </div>
+            <span class="menu-tag">Классика</span>
+          </article>
+          <article class="menu-row reveal">
+            <div>
+              <h3>Капучино / Флэт уайт</h3>
+              <p>Шёлковая молочная пенка и баланс зерна</p>
+            </div>
+            <span class="menu-tag">Хит</span>
+          </article>
+          <article class="menu-row reveal">
+            <div>
+              <h3>Авторские напитки</h3>
+              <p>Сезонные сочетания и фирменные рецепты</p>
+            </div>
+            <span class="menu-tag">Сезон</span>
+          </article>
+          <article class="menu-row reveal">
+            <div>
+              <h3>Выпечка дня</h3>
+              <p>Круассаны, печенье и сладкие акценты к кофе</p>
+            </div>
+            <span class="menu-tag">Свежее</span>
+          </article>
+          <article class="menu-row reveal">
+            <div>
+              <h3>Coffee to go</h3>
+              <p>Быстрый формат в парке Швейцария и на маршрутах города</p>
+            </div>
+            <span class="menu-tag">С собой</span>
+          </article>
+        </div>
+      </div>
+      <div class="menu-gallery" aria-hidden="true">
+        <img src="assets/gallery-1.jpg" alt="" loading="lazy" class="reveal" />
+        <img src="assets/gallery-2.jpg" alt="" loading="lazy" class="reveal" />
+      </div>
+    </section>
+
+    <section class="locations section" id="locations">
+      <div class="container">
+        <div class="locations-head">
+          <p class="eyebrow reveal">ЛОКАЦИИ</p>
+          <h2 class="section-title reveal">Где найти нас<br />в городе</h2>
+          <p class="section-text reveal">Кофейни с посадочными местами и киоски coffee to go — выбирайте формат под настроение.</p>
+        </div>
+
+        <div class="loc-filters reveal" role="tablist" aria-label="Фильтр локаций">
+          <button class="loc-filter is-active" type="button" data-filter="all" role="tab" aria-selected="true">Все</button>
+          <button class="loc-filter" type="button" data-filter="cafe" role="tab" aria-selected="false">С посадочными</button>
+          <button class="loc-filter" type="button" data-filter="togo" role="tab" aria-selected="false">To go</button>
+        </div>
+
+        <div class="loc-grid">
+          <article class="loc-card reveal" data-type="cafe">
+            <p class="loc-area">Набережная</p>
+            <h3>Нижневолжская набережная</h3>
+            <p class="loc-type">Кофейни с посадочными местами</p>
+            <ul>
+              <li>Площадь Маркина 15а/2 — напротив Речного вокзала</li>
+              <li>Площадь Маркина 15а/3 — напротив бывш. фабрики «Маяк»</li>
+              <li>Нижневолжская набережная 25а — рядом с фонтаном</li>
+            </ul>
+          </article>
+
+          <article class="loc-card reveal" data-type="cafe">
+            <p class="loc-area">Центр</p>
+            <h3>Тимирязева 27а</h3>
+            <p class="loc-type">Кофейня с посадочными местами</p>
+            <ul>
+              <li>Уютная точка для встреч и спокойной работы</li>
+            </ul>
+          </article>
+
+          <article class="loc-card reveal" data-type="togo">
+            <p class="loc-area">Парк</p>
+            <h3>Парк Швейцария</h3>
+            <p class="loc-type">Киоски coffee to go</p>
+            <ul>
+              <li>Остановка ул. Сурикова</li>
+              <li>Остановка ул. Медицинская</li>
+              <li>Остановка Администрация Приокского р-на</li>
+              <li>Около Океаниса</li>
+            </ul>
+          </article>
+
+          <article class="loc-card reveal" data-type="cafe">
+            <p class="loc-area">За городом</p>
+            <h3>Щелковский хутор</h3>
+            <p class="loc-type">Кофейня с посадочными местами</p>
+            <ul>
+              <li>Около Третьего озера</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback section" id="feedback">
+      <div class="container feedback-grid">
+        <div class="feedback-copy">
+          <p class="eyebrow reveal">ОБРАТНАЯ СВЯЗЬ</p>
+          <h2 class="section-title reveal">Напишите нам</h2>
+          <p class="section-text reveal">Вопрос о локации, сотрудничество или просто тёплые слова — ответим в ближайшее время.</p>
+          <div class="feedback-note reveal">
+            <p>Или сразу свяжитесь напрямую:</p>
+            <a href="mailto:streethygge@yandex.ru">streethygge@yandex.ru</a>
+            <a href="https://wa.me/79200333767" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="feedback-form reveal" id="feedbackForm" novalidate>
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Как к вам обращаться" />
+          </div>
+          <div class="field">
+            <label for="contact">Телефон или email</label>
+            <input id="contact" name="contact" type="text" autocomplete="email" required placeholder="+7… или mail@example.com" />
+          </div>
+          <div class="field">
+            <label for="topic">Тема</label>
+            <select id="topic" name="topic">
+              <option value="question">Вопрос</option>
+              <option value="feedback">Отзыв</option>
+              <option value="collab">Сотрудничество</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Расскажите, чем можем помочь"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Отправить</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow reveal">КОНТАКТЫ</p>
+          <h2 class="section-title reveal">Будем на связи</h2>
+          <p class="section-text reveal">Звоните, пишите в мессенджеры или загляните в соцсети — там свежие новости и атмосфера наших точек.</p>
+        </div>
+        <div class="contact-list">
+          <a class="contact-item reveal" href="tel:+79200131130">
+            <span>Телефон</span>
+            <strong>+7 920 013-11-30</strong>
+          </a>
+          <a class="contact-item reveal" href="tel:+79200333767">
+            <span>Телефон</span>
+            <strong>+7 920 033-37-67</strong>
+          </a>
+          <a class="contact-item reveal" href="mailto:streethygge@yandex.ru">
+            <span>Email</span>
+            <strong>streethygge@yandex.ru</strong>
+          </a>
+        </div>
+        <div class="socials reveal">
+          <p>Мы в социальных сетях</p>
+          <div class="social-links">
+            <a href="https://vk.com/coffeehygge" target="_blank" rel="noopener noreferrer">VK</a>
+            <a href="https://instagram.com/coffeehygge.nn" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://t.me/coffeehygge" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://wa.me/79200333767" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#top">
+        <img src="assets/logo.jpg" alt="" width="36" height="36" />
+        <span>КОФЕХЮГГЕ</span>
+      </a>
+      <p>© <span id="year"></span> КОФЕХЮГГЕ. Нижний Новгород. Счастье в кофейной чашке.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LogHouse — гостиничный комплекс в Нижнем Новгороде</title>
+  <meta name="description" content="Гостиничный комплекс LogHouse: 20 дизайнерских номеров, русские бани, сауны, беседки и шатёр. Нижний Новгород, ул. Артельная, 21А." />
+  <link rel="icon" href="https://loghouse-nn.ru/sites/default/files/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="header" data-header>
+    <div class="header__inner">
+      <a class="header__logo" href="/">
+        <img src="assets/img/logo.png" alt="LogHouse" width="140" height="48" />
+      </a>
+      <nav class="header__nav" data-nav>
+        <a href="#about">О комплексе</a>
+        <a href="#rooms">Номера</a>
+        <a href="#wellness">Бани и сауны</a>
+        <a href="#territory">Территория</a>
+        <a href="#events">Мероприятия</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a class="header__phone" href="tel:+79202533083">8 (920) 253-30-83</a>
+      <a class="btn btn--sm" href="#booking">Забронировать</a>
+      <button class="burger" type="button" aria-label="Меню" data-burger>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" data-hero>
+      <div class="hero__canvas" aria-hidden="true">
+        <div class="hero__glow hero__glow--a"></div>
+        <div class="hero__glow hero__glow--b"></div>
+        <div class="hero__mesh"></div>
+        <div class="geo geo--rings-wrap">
+          <svg class="geo geo--rings" viewBox="0 0 400 400">
+            <circle class="ring ring--1" cx="200" cy="200" r="60" />
+            <circle class="ring ring--2" cx="200" cy="200" r="100" />
+            <circle class="ring ring--3" cx="200" cy="200" r="145" />
+            <circle class="ring ring--4" cx="200" cy="200" r="185" />
+            <circle class="ring ring--core" cx="200" cy="200" r="18" />
+          </svg>
+        </div>
+        <div class="geo geo--beams">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="geo geo--gable">
+          <svg viewBox="0 0 240 160">
+            <path d="M20 140 L120 28 L220 140 Z" />
+            <path d="M70 140 V88 H170 V140" />
+            <circle cx="120" cy="108" r="10" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__brand">LogHouse</p>
+        <h1 class="hero__title">Дом из бревна у озера</h1>
+        <p class="hero__lead">Тишина садов, дизайнерские номера и настоящая русская баня — в трёх километрах от центра Нижнего Новгорода.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#rooms">Смотреть номера</a>
+          <a class="btn btn--ghost" href="#booking">Забронировать</a>
+        </div>
+      </div>
+
+      <div class="hero__meta">
+        <span>Нижний Новгород</span>
+        <span class="dot"></span>
+        <span>ул. Артельная, 21А</span>
+      </div>
+
+      <button class="hero__scroll" type="button" data-scroll-to="#features" aria-label="Дальше">
+        <span></span>
+      </button>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="features__grid">
+          <article class="feature reveal" style="--d:0">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><rect x="8" y="28" width="48" height="10" rx="2"/><rect x="12" y="18" width="40" height="8" rx="2"/><rect x="16" y="40" width="32" height="8" rx="2"/></svg>
+            </div>
+            <h2>20 номеров</h2>
+            <p>Каждый — в своём стиле: от лофта до охотничьего домика</p>
+          </article>
+          <article class="feature reveal" style="--d:1">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="18"/><circle cx="32" cy="32" r="8"/><path d="M32 8v8M32 48v8M8 32h8M48 32h8"/></svg>
+            </div>
+            <h2>Своё озеро</h2>
+            <p>Просторная территория с зелёными садами и водой рядом</p>
+          </article>
+          <article class="feature reveal" style="--d:2">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M12 44c8-18 32-18 40 0"/><path d="M20 44c5-10 19-10 24 0"/><circle cx="32" cy="22" r="6"/></svg>
+            </div>
+            <h2>Бани и сауны</h2>
+            <p>«Медведь», «Берлога» и три сауны для отдыха душой и телом</p>
+          </article>
+          <article class="feature reveal" style="--d:3">
+            <div class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M8 40 L32 12 L56 40 Z"/><rect x="22" y="40" width="20" height="14"/></svg>
+            </div>
+            <h2>Беседки круглый год</h2>
+            <p>Летние и отапливаемые площадки на 12–50 гостей</p>
+          </article>
+        </div>
+      </div>
+      <div class="features__rail" aria-hidden="true">
+        <div class="marquee" data-marquee>
+          <span>бревно · озеро · баня · тишина · сад · камин · шатёр · </span>
+          <span>бревно · озеро · баня · тишина · сад · камин · шатёр · </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container about__grid">
+        <div class="about__visual reveal">
+          <div class="about__frame">
+            <img src="assets/img/about1.png" alt="Территория комплекса LogHouse" />
+          </div>
+          <div class="about__stack">
+            <img src="assets/img/berloga.jpg" alt="Банный комплекс Берлога" />
+            <div class="about__badge">
+              <strong data-count="3">0</strong>
+              <span>км до центра</span>
+            </div>
+          </div>
+          <svg class="about__rings" viewBox="0 0 200 200" aria-hidden="true">
+            <circle cx="100" cy="100" r="70" />
+            <circle cx="100" cy="100" r="50" />
+            <circle cx="100" cy="100" r="30" />
+          </svg>
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow">О комплексе</p>
+          <h2>Город рядом.<br />Суета — далеко.</h2>
+          <p>Отель «LogHouse» расположен в Нижнем Новгороде в окружении зелёных садов, вдалеке от магистралей. Свежий воздух и тишина — залог хорошего отдыха наших гостей.</p>
+          <p>Номерной фонд — 20 дизайнерских номеров: в бревне и классические. В каждом — своя атмосфера и всё необходимое для комфортного размещения.</p>
+          <a class="link-arrow" href="https://loghouse-nn.ru/about">Подробнее о комплексе</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section class="rooms" id="rooms">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Каталог номеров</p>
+          <h2>Двадцать историй<br />под одной крышей</h2>
+          <p>От «Монро» и «Дикого запада» до «Сакуры» и «Охотничьего домика» — выбирайте настроение, а не просто кровать.</p>
+        </div>
+
+        <div class="rooms__stage">
+          <div class="rooms__featured reveal">
+            <img src="assets/img/rooms-big.png" alt="Интерьер номера LogHouse" />
+            <div class="rooms__featured-copy">
+              <span>Избранное</span>
+              <h3>Дизайнерские интерьеры</h3>
+              <a class="btn btn--sm" href="https://loghouse-nn.ru/rooms">Все номера</a>
+            </div>
+          </div>
+
+          <div class="rooms__list">
+            <a class="room reveal" href="https://loghouse-nn.ru/rooms" style="--d:0">
+              <div class="room__img"><img src="assets/img/monroe.jpg" alt="Номер Монро" /></div>
+              <div class="room__body">
+                <h3>Монро</h3>
+                <p>2 ТВ · диван-кровать · кондиционер</p>
+              </div>
+            </a>
+            <a class="room reveal" href="https://loghouse-nn.ru/rooms" style="--d:1">
+              <div class="room__img"><img src="assets/img/blackpepper.jpg" alt="Номер BlackPepper" /></div>
+              <div class="room__body">
+                <h3>BlackPepper</h3>
+                <p>Две спальни · чайный набор · WI-FI</p>
+              </div>
+            </a>
+            <a class="room reveal" href="https://loghouse-nn.ru/rooms" style="--d:2">
+              <div class="room__img"><img src="assets/img/wildwest.jpg" alt="Номер Дикий запад" /></div>
+              <div class="room__body">
+                <h3>Дикий запад</h3>
+                <p>Кухня · диван-трансформер · санузел</p>
+              </div>
+            </a>
+            <a class="room reveal" href="https://loghouse-nn.ru/rooms" style="--d:3">
+              <div class="room__img"><img src="assets/img/hunter.jpg" alt="Охотничий домик" /></div>
+              <div class="room__body">
+                <h3>Охотничий домик</h3>
+                <p>Камин · кухня · атмосфера леса</p>
+              </div>
+            </a>
+            <a class="room reveal" href="https://loghouse-nn.ru/rooms" style="--d:4">
+              <div class="room__img"><img src="assets/img/loft.jpg" alt="Номер Лофт" /></div>
+              <div class="room__body">
+                <h3>Лофт</h3>
+                <p>Барная стойка · на 3 персоны</p>
+              </div>
+            </a>
+            <a class="room reveal" href="https://loghouse-nn.ru/rooms" style="--d:5">
+              <div class="room__img"><img src="assets/img/sakura.jpg" alt="Номер Сакура" /></div>
+              <div class="room__body">
+                <h3>Сакура</h3>
+                <p>Японские мотивы · комфорт двоих</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WELLNESS -->
+    <section class="wellness" id="wellness">
+      <div class="wellness__bg" aria-hidden="true">
+        <div class="wellness__haze"></div>
+        <svg class="wellness__hex" viewBox="0 0 800 600">
+          <polygon points="120,80 200,40 280,80 280,160 200,200 120,160" />
+          <polygon points="480,200 580,140 680,200 680,320 580,380 480,320" />
+          <polygon points="80,360 140,320 200,360 200,440 140,480 80,440" />
+        </svg>
+      </div>
+      <div class="container">
+        <div class="section-head section-head--light reveal">
+          <p class="eyebrow">Бани и сауны</p>
+          <h2>Истопи-ка баньку.<br />Да пожарче.</h2>
+          <p>Две русские бани и три сауны — для тех, кто умеет отдыхать по-настоящему.</p>
+        </div>
+
+        <div class="wellness__grid">
+          <article class="well-card reveal" style="--d:0">
+            <img src="assets/img/medved.jpg" alt="Баня Медведь" />
+            <div class="well-card__copy">
+              <h3>Баня «Медведь»</h3>
+              <p>Настоящая русская баня для ценителей жаркого пара</p>
+              <a href="https://loghouse-nn.ru/russkie-bani">Подробнее</a>
+            </div>
+          </article>
+          <article class="well-card reveal" style="--d:1">
+            <img src="assets/img/berloga.jpg" alt="Баня Берлога" />
+            <div class="well-card__copy">
+              <h3>Баня «Берлога»</h3>
+              <p>Двухэтажный дом 140 м² с бассейном и джакузи</p>
+              <a href="https://loghouse-nn.ru/russkie-bani">Подробнее</a>
+            </div>
+          </article>
+          <article class="well-card reveal" style="--d:2">
+            <img src="assets/img/hero-sauna.png" alt="Сауны LogHouse" />
+            <div class="well-card__copy">
+              <h3>Три сауны</h3>
+              <p>Отдых душой и телом в уютных парных</p>
+              <a href="https://loghouse-nn.ru/sauny">Подробнее</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERRITORY -->
+    <section class="territory" id="territory">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Территория</p>
+          <h2>Беседки, шатёр<br />и воздух свободы</h2>
+        </div>
+
+        <div class="territory__layout">
+          <a class="terra terra--large reveal" href="https://loghouse-nn.ru/besedki">
+            <img src="assets/img/hero-besedka.png" alt="Беседки LogHouse" />
+            <div class="terra__copy">
+              <h3>Беседки</h3>
+              <p>От 12 до 50 гостей — летние и отапливаемые круглый год</p>
+            </div>
+          </a>
+          <a class="terra reveal" href="https://loghouse-nn.ru/shatyor" style="--d:1">
+            <img src="assets/img/shater.jpg" alt="Шатёр LogHouse" />
+            <div class="terra__copy">
+              <h3>Шатёр</h3>
+              <p>Веранда для ужина или торжества</p>
+            </div>
+          </a>
+          <a class="terra reveal" href="#about" style="--d:2">
+            <img src="assets/img/service2.png" alt="Кухня и территория" />
+            <div class="terra__copy">
+              <h3>Своя кухня</h3>
+              <p>Готовьте сами или закажите банкет</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="timber-strip" aria-hidden="true">
+        <div class="timber-strip__line" data-draw></div>
+      </div>
+    </section>
+
+    <!-- ATMOSPHERE -->
+    <section class="atmosphere" id="atmosphere">
+      <div class="container atmosphere__head reveal">
+        <p class="eyebrow">Атмосфера</p>
+        <h2>Пространство,<br />в котором хочется остаться</h2>
+      </div>
+
+      <div class="atmosphere__track" data-parallax-track>
+        <figure class="atm-shot" style="--x: -8%">
+          <img src="assets/img/service1.png" alt="Интерьер комплекса" />
+        </figure>
+        <figure class="atm-shot atm-shot--tall" style="--x: 4%">
+          <img src="assets/img/service3.png" alt="Зона отдыха" />
+        </figure>
+        <figure class="atm-shot" style="--x: -4%">
+          <img src="assets/img/events.png" alt="Праздничная атмосфера" />
+        </figure>
+        <figure class="atm-shot atm-shot--wide" style="--x: 6%">
+          <img src="assets/img/service4.png" alt="Детали пространства" />
+        </figure>
+      </div>
+
+      <div class="atmosphere__geo" aria-hidden="true">
+        <div class="log-stack">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="events" id="events">
+      <div class="container events__grid">
+        <div class="events__text reveal">
+          <p class="eyebrow">Мероприятия</p>
+          <h2>Дни рождения,<br />свадьбы, корпоративы</h2>
+          <p>«LogHouse» воплотит ваши идеи и организует событие любой сложности. Только опытные аниматоры и ведущие.</p>
+          <ul class="events__list">
+            <li><span>01</span> Организация банкета</li>
+            <li><span>02</span> Детские праздники</li>
+            <li><span>03</span> Корпоративы и тимбилдинги</li>
+            <li><span>04</span> Свадебные торжества</li>
+          </ul>
+          <a class="btn" href="https://loghouse-nn.ru/events">Организация мероприятий</a>
+        </div>
+        <div class="events__visual reveal">
+          <img src="assets/img/events.png" alt="Мероприятие в LogHouse" />
+          <div class="events__orbit" aria-hidden="true">
+            <svg viewBox="0 0 320 320">
+              <circle cx="160" cy="160" r="140" />
+              <circle cx="160" cy="160" r="100" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats__row">
+        <div class="stat reveal">
+          <strong><span data-count="20">0</span></strong>
+          <span>дизайнерских номеров</span>
+        </div>
+        <div class="stat reveal" style="--d:1">
+          <strong><span data-count="50">0</span>+</strong>
+          <span>гостей в беседках</span>
+        </div>
+        <div class="stat reveal" style="--d:2">
+          <strong><span data-count="5">0</span></strong>
+          <span>бань и саун</span>
+        </div>
+        <div class="stat reveal" style="--d:3">
+          <strong><span data-count="1">0</span></strong>
+          <span>собственное озеро</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking" id="booking">
+      <div class="booking__panel reveal">
+        <div class="booking__geo" aria-hidden="true">
+          <svg viewBox="0 0 600 400">
+            <circle cx="520" cy="80" r="120" />
+            <circle cx="520" cy="80" r="80" />
+            <circle cx="520" cy="80" r="40" />
+            <path d="M0 320 H600" />
+            <path d="M0 340 H600" />
+            <path d="M0 360 H600" />
+          </svg>
+        </div>
+        <p class="eyebrow">Бронирование</p>
+        <h2>Забронируйте отдых<br />в LogHouse</h2>
+        <p>Позвоните нам или оставьте заявку — подберём номер, баню или беседку под ваш формат.</p>
+        <div class="booking__actions">
+          <a class="btn" href="tel:+79202533083">8 (920) 253-30-83</a>
+          <a class="btn btn--ghost" href="tel:+79200052758">8 (920) 005-27-58</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2>Как нас найти</h2>
+          <address>
+            <p><strong>Адрес</strong><br />г. Нижний Новгород, ул. Артельная, 21А</p>
+            <p><strong>Телефон</strong><br />
+              <a href="tel:+79202533083">8 (920) 253-30-83</a><br />
+              <a href="tel:+79200052758">8 (920) 005-27-58</a>
+            </p>
+          </address>
+          <a class="link-arrow" href="https://loghouse-nn.ru/kontakty">Страница контактов</a>
+        </div>
+        <div class="contact__map reveal">
+          <iframe
+            title="LogHouse на карте"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://yandex.ru/map-widget/v1/?ll=44.008193%2C56.298588&z=15&pt=44.008193,56.298588,pm2rdm"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo.png" alt="LogHouse" width="120" height="40" />
+        <p>Гостиничный комплекс в Нижнем Новгороде</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="https://loghouse-nn.ru/rooms">Номера</a>
+        <a href="https://loghouse-nn.ru/sauny">Сауны</a>
+        <a href="https://loghouse-nn.ru/russkie-bani">Русские бани</a>
+        <a href="https://loghouse-nn.ru/besedki">Беседки</a>
+        <a href="https://loghouse-nn.ru/events">Мероприятия</a>
+        <a href="https://loghouse-nn.ru/about">О комплексе</a>
+      </nav>
+      <div class="footer__meta">
+        <p>© LogHouse, <span data-year></span></p>
+        <p>Реестр: С522025016203</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

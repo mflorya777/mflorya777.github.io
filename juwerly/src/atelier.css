@@ -1,0 +1,7 @@
+/* Preserve the atelier interface; give the object a neutral photographic sweep. */
+.viewer {background:radial-gradient(ellipse at 48% 40%,#fffefa 0%,#eeeae2 53%,#dedbd2 100%)}
+.viewer:after {display:none}
+.view-tabs {background:#fffdf5c9;backdrop-filter:blur(12px)}
+.viewer-heading .eyebrow {letter-spacing:.16em}
+.rotate-hint {color:#77786c}
+@media(prefers-reduced-motion:reduce){.viewer *{animation:none!important}}

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ТОНУС ЛАЙФ — медицинский центр в Нижнем Новгороде</title>
+  <meta name="description" content="Многопрофильный медицинский центр ТОНУС ЛАЙФ: диагностика, неврология, детский центр. МРТ 3,0 Тесла. Нижний Новгород, ул. Родионова, 190Д." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a class="logo" href="#top" aria-label="ТОНУС Life — на главную">
+        <span class="logo__tonus">ТОНУС</span>
+        <span class="logo__life">Life</span>
+        <span class="logo__sub">медицинский центр</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#about">О центре</a>
+        <a href="#directions">Направления</a>
+        <a href="#tech">Диагностика</a>
+        <a href="#doctors">Специалисты</a>
+        <a href="#promo">Акции</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+78312429707">8 (831) 242-97-07</a>
+        <a class="btn btn--primary btn--sm" href="#appointment">Запись</a>
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Главный экран">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__gradient"></div>
+        <div class="hero__mesh"></div>
+        <svg class="hero__geo" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fff" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#fff" stop-opacity="0.05"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#FF4D8D" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#FF4D8D" stop-opacity="0.05"/>
+            </linearGradient>
+          </defs>
+          <g class="geo-float geo-float--1">
+            <polygon points="920,80 1080,160 1000,320 840,240" fill="url(#g1)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+            <polygon points="980,140 1060,180 1020,260 940,220" fill="rgba(255,255,255,0.12)"/>
+          </g>
+          <g class="geo-float geo-float--2">
+            <circle cx="180" cy="520" r="110" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+            <circle cx="180" cy="520" r="70" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+            <circle cx="180" cy="520" r="28" fill="url(#g2)"/>
+          </g>
+          <g class="geo-float geo-float--3">
+            <path d="M620 620 L760 560 L820 680 L680 740 Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+            <path d="M680 660 L740 635 L765 685 L705 710 Z" fill="rgba(255,77,141,0.25)"/>
+          </g>
+          <g class="geo-float geo-float--4">
+            <rect x="70" y="120" width="90" height="90" rx="8" transform="rotate(18 115 165)" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+            <rect x="100" y="150" width="50" height="50" rx="4" transform="rotate(18 125 175)" fill="rgba(255,255,255,0.12)"/>
+          </g>
+          <g class="geo-pulse">
+            <circle cx="1050" cy="560" r="8" fill="#FF4D8D"/>
+            <circle cx="1050" cy="560" r="8" fill="#FF4D8D" class="pulse-ring"/>
+          </g>
+          <path class="geo-line" d="M200 200 Q400 100 600 280 T1000 200" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="8 12"/>
+        </svg>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__brand reveal">ТОНУС Life</p>
+        <h1 class="hero__title reveal reveal-delay-1">
+          Здоровье<br />на новом уровне
+        </h1>
+        <p class="hero__lead reveal reveal-delay-2">
+          Многопрофильный медицинский центр в Нижнем Новгороде: точная диагностика, неврология и забота о детях на оборудовании мирового класса.
+        </p>
+        <div class="hero__cta reveal reveal-delay-3">
+          <a class="btn btn--primary" href="#appointment">Записаться на приём</a>
+          <a class="btn btn--ghost" href="#directions">Направления центра</a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#stats" aria-label="Листать вниз">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" id="stats" aria-label="Ключевые показатели">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <div class="stat__num" data-count="25">0</div>
+          <div class="stat__label">лет опыта сети «Тонус»</div>
+        </div>
+        <div class="stat reveal reveal-delay-1">
+          <div class="stat__num" data-count="3" data-suffix=",0">0</div>
+          <div class="stat__label">Тесла — МРТ нового уровня</div>
+        </div>
+        <div class="stat reveal reveal-delay-2">
+          <div class="stat__num" data-count="10" data-prefix="+">0</div>
+          <div class="stat__label">медицинских направлений</div>
+        </div>
+        <div class="stat reveal reveal-delay-3">
+          <div class="stat__num" data-count="100" data-suffix="%">0</div>
+          <div class="stat__label">лицензированных услуг</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECTIONS -->
+    <section class="section directions" id="directions">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Направления</p>
+          <h2 class="section__title reveal reveal-delay-1">Три центра.<br />Одна система заботы</h2>
+          <p class="section__lead reveal reveal-delay-2">Каждое направление — отдельная экспертиза и общая культура точной, внимательной медицины.</p>
+        </div>
+
+        <div class="directions__grid">
+          <article class="direction reveal">
+            <div class="direction__geo" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><polygon points="60,8 112,38 112,82 60,112 8,82 8,38" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="60,28 92,46 92,74 60,92 28,74 28,46" fill="currentColor" opacity="0.12"/></svg>
+            </div>
+            <h3>Консультативно-диагностический центр</h3>
+            <p>Опытные специалисты, оборудование ведущих мировых фирм, лабораторная диагностика и дневной стационар.</p>
+            <a class="text-link" href="#appointment">Записаться <span>→</span></a>
+          </article>
+
+          <article class="direction direction--accent reveal reveal-delay-1">
+            <div class="direction__geo" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="48" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="60" cy="60" r="28" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="60" cy="60" r="10" fill="currentColor"/></svg>
+            </div>
+            <h3>Клиника неврологии и эпилептологии</h3>
+            <p>Неврология такой, какой она должна быть: глубокая диагностика, современные протоколы и индивидуальный маршрут лечения.</p>
+            <a class="text-link" href="#appointment">Записаться <span>→</span></a>
+          </article>
+
+          <article class="direction reveal reveal-delay-2">
+            <div class="direction__geo" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><rect x="18" y="18" width="84" height="84" rx="12" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(12 60 60)"/><rect x="36" y="36" width="48" height="48" rx="8" fill="currentColor" opacity="0.12" transform="rotate(-8 60 60)"/></svg>
+            </div>
+            <h3>Многопрофильный детский центр</h3>
+            <p>Оснащение для всестороннего обследования и эффективного лечения маленьких пациентов в бережной атмосфере.</p>
+            <a class="text-link" href="#appointment">Записаться <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__visual reveal">
+          <div class="about__frame">
+            <div class="about__shape about__shape--1"></div>
+            <div class="about__shape about__shape--2"></div>
+            <div class="about__shape about__shape--3"></div>
+            <div class="about__badge">
+              <strong>25+</strong>
+              <span>лет традиций сети «Тонус»</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__content">
+          <p class="eyebrow reveal">О центре</p>
+          <h2 class="section__title reveal reveal-delay-1">ТОНУС ЛАЙФ — масштабный проект современной медицины</h2>
+          <p class="reveal reveal-delay-2">Центр основан на лучших традициях и 25-летнем опыте сети медицинских клиник «Тонус». Здесь работают высококвалифицированные специалисты с большим стажем в ведущих учреждениях Нижнего Новгорода.</p>
+          <p class="reveal reveal-delay-3">Современные технологии делают диагностику детальной и точной. Опыт врачей и инновационное оборудование складываются в формулу здоровья — от первого приёма до выздоровления.</p>
+          <ul class="about__list reveal reveal-delay-4">
+            <li>Индивидуальный подход к каждому пациенту</li>
+            <li>Высокотехнологичное диагностическое оборудование</li>
+            <li>Лицензированные услуги и сертифицированные методики</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH / MRI -->
+    <section class="section tech" id="tech">
+      <div class="tech__bg" aria-hidden="true">
+        <div class="tech__rings">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="container tech__inner">
+        <div class="tech__copy">
+          <p class="eyebrow eyebrow--light reveal">Диагностика</p>
+          <h2 class="section__title section__title--light reveal reveal-delay-1">МРТ 3,0 Тесла.<br />Новый уровень точности</h2>
+          <p class="tech__lead reveal reveal-delay-2">Высокопольная томография помогает выявлять заболевания на ранней стадии и строить лечение на достоверных данных — быстро, детально, безопасно.</p>
+          <div class="tech__points">
+            <div class="tech__point reveal reveal-delay-1">
+              <span class="tech__icon" aria-hidden="true"></span>
+              <div>
+                <strong>Детализация изображений</strong>
+                <p>Чёткие срезы для сложных неврологических и ортопедических задач</p>
+              </div>
+            </div>
+            <div class="tech__point reveal reveal-delay-2">
+              <span class="tech__icon tech__icon--2" aria-hidden="true"></span>
+              <div>
+                <strong>Скорость исследования</strong>
+                <p>Современные протоколы сокращают время в аппарате без потери качества</p>
+              </div>
+            </div>
+            <div class="tech__point reveal reveal-delay-3">
+              <span class="tech__icon tech__icon--3" aria-hidden="true"></span>
+              <div>
+                <strong>Экспертное описание</strong>
+                <p>Заключение формируют специалисты с большим клиническим опытом</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tech__visual reveal">
+          <div class="mri">
+            <div class="mri__core"></div>
+            <div class="mri__scan"></div>
+            <div class="mri__label">3.0 T</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="eyebrow reveal">Как мы работаем</p>
+          <h2 class="section__title reveal reveal-delay-1">Ответственность за результат</h2>
+          <p class="section__lead reveal reveal-delay-2">Мы дорожим репутацией: каждая консультация, исследование и процедура — на высоком стандарте качества.</p>
+        </div>
+
+        <div class="process__track">
+          <div class="process__line" aria-hidden="true"></div>
+          <article class="process__step reveal">
+            <div class="process__num">01</div>
+            <h3>Качество</h3>
+            <p>Работа по высоким клиническим стандартам: от записи до сопровождения после приёма.</p>
+          </article>
+          <article class="process__step reveal reveal-delay-1">
+            <div class="process__num">02</div>
+            <h3>Надёжность</h3>
+            <p>Лицензированные услуги, сертифицированное оборудование и проверенные методики.</p>
+          </article>
+          <article class="process__step reveal reveal-delay-2">
+            <div class="process__num">03</div>
+            <h3>Индивидуальность</h3>
+            <p>Маршрут диагностики и лечения строится под конкретного пациента, а не «по шаблону».</p>
+          </article>
+          <article class="process__step reveal reveal-delay-3">
+            <div class="process__num">04</div>
+            <h3>Развитие</h3>
+            <p>Специалисты регулярно повышают квалификацию в российских и международных школах.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTORS -->
+    <section class="section doctors" id="doctors">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow reveal">Специалисты</p>
+            <h2 class="section__title reveal reveal-delay-1">Ведущие врачи центра</h2>
+          </div>
+          <p class="section__lead reveal reveal-delay-2">Лучшие врачи Нижегородской области готовы принять вас в ТОНУС ЛАЙФ.</p>
+        </div>
+
+        <div class="doctors__grid">
+          <article class="doctor reveal">
+            <div class="doctor__photo doctor__photo--1" aria-hidden="true">
+              <span class="doctor__initials">КМ</span>
+            </div>
+            <h3>Косякина Мария Юрьевна</h3>
+            <p>Зав. консультативно-диагностическим центром, руководитель Клиники неврологии и эпилептологии, врач-невролог высшей категории, эпилептолог, к.м.н.</p>
+            <a class="btn btn--outline btn--sm" href="#appointment">Запись на приём</a>
+          </article>
+          <article class="doctor reveal reveal-delay-1">
+            <div class="doctor__photo doctor__photo--2" aria-hidden="true">
+              <span class="doctor__initials">АВ</span>
+            </div>
+            <h3>Антонова Виктория Антоновна</h3>
+            <p>Врач-невролог, ботулинотерапевт, цефалголог, вестибулолог, паркинсонолог, вертеброневролог, нейропсихолог, к.м.н.</p>
+            <a class="btn btn--outline btn--sm" href="#appointment">Запись на приём</a>
+          </article>
+          <article class="doctor reveal reveal-delay-2">
+            <div class="doctor__photo doctor__photo--3" aria-hidden="true">
+              <span class="doctor__initials">ДВ</span>
+            </div>
+            <h3>Дворянинова Вероника Владимировна</h3>
+            <p>Детский психиатр, психолог, детский психолог, к.м.н.</p>
+            <a class="btn btn--outline btn--sm" href="#appointment">Запись на приём</a>
+          </article>
+          <article class="doctor reveal reveal-delay-3">
+            <div class="doctor__photo doctor__photo--4" aria-hidden="true">
+              <span class="doctor__initials">КИ</span>
+            </div>
+            <h3>Китаева Ирина Ивановна</h3>
+            <p>Врач-психиатр высшей категории, психотерапевт, к.м.н., доцент.</p>
+            <a class="btn btn--outline btn--sm" href="#appointment">Запись на приём</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Отзывы</p>
+          <h2 class="section__title reveal reveal-delay-1">Благодарные пациенты</h2>
+        </div>
+
+        <div class="reviews__slider" id="reviewsSlider">
+          <article class="review is-active">
+            <div class="review__quote" aria-hidden="true">“</div>
+            <p>Груздева Лилиана Владимировна, большое спасибо за помощь! Всё объяснила, назначила лечение. Не сомневаюсь, что лечение поможет. С удовольствием порекомендую этого врача.</p>
+            <footer>
+              <strong>Скляренко Нелли Алексеевна</strong>
+              <span>Клиника неврологии и эпилептологии · 05.05.2025</span>
+            </footer>
+          </article>
+          <article class="review">
+            <div class="review__quote" aria-hidden="true">“</div>
+            <p>Персонал клиники очень вежлив и готов помочь. Обратилась к кардиологу Болховитиной Ольге Александровне — внимательно выслушала, провела осмотр, назначила исследования и лечение. Самочувствие значительно улучшилось.</p>
+            <footer>
+              <strong>Ирина С.</strong>
+              <span>Клиника неврологии и эпилептологии · 10.02.2025</span>
+            </footer>
+          </article>
+          <article class="review">
+            <div class="review__quote" aria-hidden="true">“</div>
+            <p>Была на консультации в рамках телемедицины. Всё было просто отлично! Особенно понравилось, что это происходит в течение дня, дома. Сразу вынесли вердикт и написали заключение.</p>
+            <footer>
+              <strong>Баранова Наталья Дмитриевна</strong>
+              <span>Клиника неврологии и эпилептологии · 07.02.2025</span>
+            </footer>
+          </article>
+        </div>
+
+        <div class="reviews__controls">
+          <button type="button" class="reviews__btn" id="reviewPrev" aria-label="Предыдущий отзыв">←</button>
+          <div class="reviews__dots" id="reviewDots"></div>
+          <button type="button" class="reviews__btn" id="reviewNext" aria-label="Следующий отзыв">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO -->
+    <section class="section promo" id="promo">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow reveal">Акции</p>
+            <h2 class="section__title reveal reveal-delay-1">Выгодные предложения августа</h2>
+          </div>
+        </div>
+
+        <div class="promo__grid">
+          <article class="promo-card reveal">
+            <div class="promo-card__geo" aria-hidden="true"></div>
+            <time datetime="2025-08-01">1 августа</time>
+            <h3>Обзорная МРТ всего позвоночника в подарок</h3>
+            <p>При МРТ любого отдела позвоночника — обзорная МРТ всего позвоночника в подарок весь август.</p>
+            <a class="text-link" href="#appointment">Записаться <span>→</span></a>
+          </article>
+          <article class="promo-card reveal reveal-delay-1">
+            <div class="promo-card__geo promo-card__geo--2" aria-hidden="true"></div>
+            <time datetime="2025-08-01">1 августа</time>
+            <h3>МРТ шейного отдела при МРТ головного мозга</h3>
+            <p>Обзорная МРТ шейного отдела позвоночника в подарок при исследовании головного мозга.</p>
+            <a class="text-link" href="#appointment">Записаться <span>→</span></a>
+          </article>
+          <article class="promo-card reveal reveal-delay-2">
+            <div class="promo-card__geo promo-card__geo--3" aria-hidden="true"></div>
+            <time datetime="2025-08-01">1 августа</time>
+            <h3>Скидка на ЭПИ у психолога</h3>
+            <p>Специальная цена на экспериментально-психологическое исследование (ЭПИ).</p>
+            <a class="text-link" href="#appointment">Записаться <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOYALTY -->
+    <section class="section loyalty" id="loyalty">
+      <div class="container loyalty__inner">
+        <div class="loyalty__content">
+          <p class="eyebrow eyebrow--light reveal">Программа лояльности</p>
+          <h2 class="section__title section__title--light reveal reveal-delay-1">«В тонусе!» — забота, которая возвращается</h2>
+          <p class="loyalty__lead reveal reveal-delay-2">Кешбэк до 10%, 1 бонус = 1 рубль, акции и персональные скидки для участников программы.</p>
+          <a class="btn btn--pink reveal reveal-delay-3" href="#appointment">Стать участником</a>
+        </div>
+        <div class="loyalty__visual reveal" aria-hidden="true">
+          <div class="loyalty__orb"></div>
+          <div class="loyalty__card">
+            <span>В ТОНУСЕ</span>
+            <strong>10%</strong>
+            <small>кешбэк</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT -->
+    <section class="section appointment" id="appointment">
+      <div class="container appointment__grid">
+        <div>
+          <p class="eyebrow reveal">Запись</p>
+          <h2 class="section__title reveal reveal-delay-1">Запишитесь на приём</h2>
+          <p class="section__lead reveal reveal-delay-2">Оставьте заявку на обратный звонок. Операторы свяжутся с вами, проконсультируют и запишут к нужному специалисту.</p>
+          <div class="appointment__contacts reveal reveal-delay-3">
+            <a href="tel:+78312429707">8 (831) 242-97-07</a>
+            <p>Нижний Новгород, ул. Родионова, 190Д</p>
+            <p>Пн–Сб: 8:00–20:00 · Вс: 9:00–16:00</p>
+          </div>
+        </div>
+
+        <form class="form reveal" id="callbackForm" novalidate>
+          <div class="form__field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" placeholder="Как к вам обращаться" required autocomplete="name" />
+          </div>
+          <div class="form__field">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel" />
+          </div>
+          <label class="form__check">
+            <input type="checkbox" id="consent" name="consent" required />
+            <span>Я согласен на обработку персональных данных и ознакомлен с политикой конфиденциальности.</span>
+          </label>
+          <button class="btn btn--primary btn--block" type="submit">Отправить заявку</button>
+          <p class="form__note" id="formNote" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="section contacts" id="contacts">
+      <div class="container contacts__grid">
+        <div>
+          <p class="eyebrow reveal">Контакты</p>
+          <h2 class="section__title reveal reveal-delay-1">Европейское качество медицины в Нижнем Новгороде</h2>
+          <div class="contacts__list">
+            <div class="contacts__item reveal">
+              <span>Адрес</span>
+              <strong>ул. Родионова, 190Д, Нижний Новгород</strong>
+            </div>
+            <div class="contacts__item reveal reveal-delay-1">
+              <span>Телефон</span>
+              <strong><a href="tel:+78312429707">8 (831) 242-97-07</a></strong>
+            </div>
+            <div class="contacts__item reveal reveal-delay-2">
+              <span>График</span>
+              <strong>Пн–Сб 8:00–20:00 · Вс 9:00–16:00</strong>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map reveal" aria-label="Карта расположения">
+          <div class="contacts__map-inner">
+            <div class="contacts__pin"></div>
+            <p>ТОНУС Life</p>
+            <span>Родионова, 190Д</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="logo logo--footer" href="#top">
+          <span class="logo__tonus">ТОНУС</span>
+          <span class="logo__life">Life</span>
+        </a>
+        <p>Уникальный многопрофильный медицинский центр</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Направления</h4>
+          <a href="#directions">Диагностический центр</a>
+          <a href="#directions">Неврология и эпилептология</a>
+          <a href="#directions">Детский центр</a>
+        </div>
+        <div>
+          <h4>Пациентам</h4>
+          <a href="#doctors">Специалисты</a>
+          <a href="#promo">Акции</a>
+          <a href="#loyalty">Программа лояльности</a>
+          <a href="#appointment">Запись на приём</a>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <a href="tel:+78312429707">8 (831) 242-97-07</a>
+          <span>ул. Родионова, 190Д</span>
+          <span>Пн–Сб: 8:00–20:00</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 ТОНУС ЛАЙФ. Демо-редизайн главной страницы.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

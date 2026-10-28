@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoDetailer — детейлинг-студия в Нижнем Новгороде</title>
+  <meta name="description" content="Профессиональный детейлинг в Нижнем Новгороде: полировка, химчистка, керамика, антигравийная плёнка. AutoDetailer — забота о вашем автомобиле." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="geo-layer" aria-hidden="true">
+    <div class="geo-ring geo-ring--a"></div>
+    <div class="geo-ring geo-ring--b"></div>
+    <div class="geo-hex"></div>
+  </div>
+
+  <header class="header" data-header>
+    <div class="header__inner">
+      <a class="logo" href="#top" aria-label="AutoDetailer">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">Auto<span>Detailer</span></span>
+      </a>
+      <nav class="nav" data-nav>
+        <a href="#services">Услуги</a>
+        <a href="#about">О студии</a>
+        <a href="#process">Процесс</a>
+        <a href="#gallery">Работы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a class="header__phone" href="tel:+79307003113">+7 930 700-31-13</a>
+      <button class="burger" type="button" data-burger aria-label="Открыть меню">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1607860108855-47acf02491f7?auto=format&fit=crop&w=2000&q=80"
+          alt=""
+          class="hero__img"
+        />
+        <div class="hero__veil"></div>
+        <div class="hero__shine"></div>
+        <svg class="hero__geometry" viewBox="0 0 800 800" fill="none" aria-hidden="true">
+          <circle class="draw-circle" cx="400" cy="400" r="280" />
+          <circle class="draw-circle draw-circle--delay" cx="400" cy="400" r="220" />
+          <path class="draw-arc" d="M120 400 A280 280 0 0 1 400 120" />
+          <line class="draw-line" x1="80" y1="400" x2="720" y2="400" />
+          <line class="draw-line draw-line--v" x1="400" y1="80" x2="400" y2="720" />
+        </svg>
+      </div>
+
+      <div class="hero__content">
+        <p class="brand-signal">AutoDetailer</p>
+        <h1 class="hero__title">Сияние кузова.<br />Точность деталей.</h1>
+        <p class="hero__lead">Детейлинг-студия в Нижнем Новгороде — полировка, химчистка, керамика и защита автомобиля с индивидуальным подходом.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Записаться</a>
+          <a class="btn btn--ghost" href="#services">Смотреть услуги</a>
+        </div>
+      </div>
+
+      <div class="hero__meta">
+        <div class="hero__meta-item">
+          <span>Пн–Пт 10:00–19:00</span>
+          <span>Сб 11:00–16:30</span>
+        </div>
+        <div class="hero__meta-item hero__meta-item--right">
+          <span>Н. Новгород</span>
+          <span>с 2014 года</span>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#services" aria-label="Дальше">
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Услуги</p>
+          <h2 class="section__title">Комплексный уход<br />для любого автомобиля</h2>
+          <p class="section__text">От глубокой очистки до долговечной защиты — подбираем программу под состояние и цели вашего авто.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service reveal" style="--i:0">
+            <div class="service__geo" aria-hidden="true"></div>
+            <span class="service__num">01</span>
+            <h3>Полировка кузова</h3>
+            <p>Восстанавливаем блеск ЛКП, убираем риски и окисление. Вернём глубину цвета и зеркальный финиш.</p>
+            <a class="text-link" href="https://autodeteil.ru/polirovka-kuzova">Подробнее</a>
+          </article>
+
+          <article class="service reveal" style="--i:1">
+            <div class="service__geo service__geo--b" aria-hidden="true"></div>
+            <span class="service__num">02</span>
+            <h3>Химчистка салона</h3>
+            <p>Глубокая очистка текстиля, кожи и пластика. Салон снова выглядит свежим — даже при большом пробеге.</p>
+            <a class="text-link" href="https://autodeteil.ru/himchistka-salona">Подробнее</a>
+          </article>
+
+          <article class="service reveal" style="--i:2">
+            <div class="service__geo service__geo--c" aria-hidden="true"></div>
+            <span class="service__num">03</span>
+            <h3>Керамическая защита</h3>
+            <p>Наносим керамические и полимерные составы с гарантией. Долгая защита от воды, грязи и УФ.</p>
+            <span class="text-link text-link--muted">По запросу</span>
+          </article>
+
+          <article class="service reveal" style="--i:3">
+            <div class="service__geo service__geo--d" aria-hidden="true"></div>
+            <span class="service__num">04</span>
+            <h3>Антигравийная плёнка</h3>
+            <p>Прозрачная защита кузова от сколов и царапин. Сохраняем заводское покрытие без потери внешнего вида.</p>
+            <span class="text-link text-link--muted">По запросу</span>
+          </article>
+
+          <article class="service reveal" style="--i:4">
+            <div class="service__geo" aria-hidden="true"></div>
+            <span class="service__num">05</span>
+            <h3>Удаление вмятин</h3>
+            <p>PDR без покраски — аккуратное восстановление геометрии кузова с сохранением заводского ЛКП.</p>
+            <span class="text-link text-link--muted">По запросу</span>
+          </article>
+
+          <article class="service reveal" style="--i:5">
+            <div class="service__geo service__geo--b" aria-hidden="true"></div>
+            <span class="service__num">06</span>
+            <h3>Полировка стёкол</h3>
+            <p>Убираем следы дворников и скребков. Доступна выездная полировка стекла.</p>
+            <span class="text-link text-link--muted">По запросу</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__visual reveal">
+          <div class="about__frame">
+            <img
+              src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1200&q=80"
+              alt="Работа детейлера с автомобилем"
+            />
+            <div class="about__orbit" aria-hidden="true"></div>
+            <div class="about__cross" aria-hidden="true"></div>
+          </div>
+          <div class="about__badge">
+            <strong data-count="11">0</strong>
+            <span>лет опыта<br />в детейлинге</span>
+          </div>
+        </div>
+
+        <div class="about__content reveal">
+          <p class="eyebrow">О студии</p>
+          <h2 class="section__title">Мы знаем,<br />что нужно вашему авто</h2>
+          <p class="section__text">
+            Каждый автомобиль уникален. Мы проводим полный анализ состояния и подбираем индивидуальный уход —
+            чтобы результат был не «стандартным», а точным именно для вашей машины.
+          </p>
+          <ul class="checklist">
+            <li>Профессиональные препараты и оборудование</li>
+            <li>Аккуратная работа с каждой деталью</li>
+            <li>Скидки до 30% на комплексы услуг</li>
+            <li>Подарочные сертификаты от 1 000 ₽</li>
+          </ul>
+          <a class="btn btn--primary" href="#contact">Получить консультацию</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats__row">
+        <div class="stat reveal" style="--i:0">
+          <strong><span data-count="2014">0</span></strong>
+          <span>год основания</span>
+        </div>
+        <div class="stat reveal" style="--i:1">
+          <strong><span data-count="6">0</span>+</strong>
+          <span>направлений услуг</span>
+        </div>
+        <div class="stat reveal" style="--i:2">
+          <strong><span data-count="30">0</span>%</strong>
+          <span>скидка на комплексы</span>
+        </div>
+        <div class="stat reveal" style="--i:3">
+          <strong>2</strong>
+          <span>адреса в городе</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Как мы работаем</p>
+          <h2 class="section__title">Четыре шага<br />до идеального результата</h2>
+        </div>
+
+        <ol class="process__list">
+          <li class="process__item reveal" style="--i:0">
+            <div class="process__marker">
+              <span>01</span>
+              <i class="process__pulse" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3>Диагностика</h3>
+              <p>Оцениваем состояние кузова и салона, фиксируем дефекты и цели владельца.</p>
+            </div>
+          </li>
+          <li class="process__item reveal" style="--i:1">
+            <div class="process__marker">
+              <span>02</span>
+              <i class="process__pulse" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3>План работ</h3>
+              <p>Составляем программу: полировка, химчистка, защита — без лишних процедур.</p>
+            </div>
+          </li>
+          <li class="process__item reveal" style="--i:2">
+            <div class="process__marker">
+              <span>03</span>
+              <i class="process__pulse" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3>Детейлинг</h3>
+              <p>Выполняем работы аккуратно и поэтапно, контролируя результат на каждом слое.</p>
+            </div>
+          </li>
+          <li class="process__item reveal" style="--i:3">
+            <div class="process__marker">
+              <span>04</span>
+              <i class="process__pulse" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h3>Сдача и уход</h3>
+              <p>Показываем результат и даём рекомендации, чтобы эффект держался дольше.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="process__track" aria-hidden="true"></div>
+    </section>
+
+    <!-- MATERIALS / PROTECTION -->
+    <section class="section materials">
+      <div class="container materials__grid">
+        <div class="materials__content reveal">
+          <p class="eyebrow">Защита</p>
+          <h2 class="section__title">Не только красота —<br />долгая защита поверхности</h2>
+          <p class="section__text">
+            Керамика, полимеры, плёнка и уход за пластиком, кожей и дисками — чтобы автомобиль оставался ухоженным между визитами.
+          </p>
+        </div>
+        <div class="materials__panel reveal">
+          <div class="chip-grid">
+            <div class="chip"><span class="chip__dot"></span>Керамика кузова</div>
+            <div class="chip"><span class="chip__dot"></span>Защита пластика</div>
+            <div class="chip"><span class="chip__dot"></span>Уход за кожей</div>
+            <div class="chip"><span class="chip__dot"></span>Защита дисков</div>
+            <div class="chip"><span class="chip__dot"></span>Антигравий</div>
+            <div class="chip"><span class="chip__dot"></span>Восстановление кожи</div>
+          </div>
+          <div class="materials__diagram" aria-hidden="true">
+            <svg viewBox="0 0 320 220">
+              <rect class="dg-rect" x="20" y="20" width="120" height="80" rx="2" />
+              <rect class="dg-rect dg-rect--2" x="180" y="40" width="120" height="80" rx="2" />
+              <circle class="dg-circle" cx="100" cy="160" r="36" />
+              <path class="dg-path" d="M140 60 L180 80 M100 124 L100 160 M220 120 L220 160 L100 160" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Атмосфера</p>
+          <h2 class="section__title">Работа, в которой<br />видна геометрия блеска</h2>
+        </div>
+      </div>
+      <div class="gallery__strip">
+        <figure class="gallery__item reveal" style="--i:0">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80" alt="Автомобиль после детейлинга" />
+          <figcaption>Кузов</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" style="--i:1">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Премиальный автомобиль" />
+          <figcaption>Финиш</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" style="--i:2">
+          <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=80" alt="Детейлинг интерьера" />
+          <figcaption>Салон</figcaption>
+        </figure>
+        <figure class="gallery__item reveal" style="--i:3">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80" alt="Мойка и подготовка" />
+          <figcaption>Подготовка</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2 class="section__title">Оставьте авто<br />в заботливых руках</h2>
+          <p class="section__text">Напишите или позвоните — подскажем по услугам и запишем на удобное время.</p>
+
+          <div class="contact__cards">
+            <a class="contact__line" href="tel:+79307003113">
+              <span>Телефон</span>
+              <strong>+7 930 700-31-13</strong>
+            </a>
+            <div class="contact__line">
+              <span>Адрес 1</span>
+              <strong>Н. Новгород, Литвинова, 44б/к1</strong>
+            </div>
+            <div class="contact__line">
+              <span>Адрес 2</span>
+              <strong>Нартова, 27А/к3, бокс 117–118</strong>
+            </div>
+            <div class="contact__line">
+              <span>График</span>
+              <strong>Пн–Пт 10:00–19:00 · Сб 11:00–16:30</strong>
+            </div>
+          </div>
+
+          <div class="messengers">
+            <a href="https://t.me/+79307003113" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://wa.me/79307003113" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="form reveal" data-form novalidate>
+          <p class="form__title">Можем вам перезвонить</p>
+          <label class="field">
+            <span>Имя</span>
+            <input type="text" name="name" placeholder="Как к вам обращаться" required />
+          </label>
+          <label class="field">
+            <span>Телефон</span>
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+          </label>
+          <label class="field">
+            <span>Комментарий</span>
+            <textarea name="message" rows="3" placeholder="Какая услуга интересует"></textarea>
+          </label>
+          <button class="btn btn--primary btn--full" type="submit">Жду звонка</button>
+          <p class="form__note">Бережно храним данные в соответствии с положением о персональных данных</p>
+          <p class="form__success" data-form-success hidden>Сообщение получено — свяжемся с вами в рабочее время.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--footer" href="#top">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">Auto<span>Detailer</span></span>
+      </a>
+      <p>© 2014–2026 AutoDetailer · Нижний Новгород</p>
+      <a href="tel:+79307003113">+7 930 700-31-13</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

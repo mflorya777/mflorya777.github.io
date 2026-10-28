@@ -1,0 +1,66 @@
+[
+  {
+    "file": "fabrics_0073_color_1k.jpg",
+    "bytes": 72157,
+    "sha256": "69734560452b22d2cf7945e88caf6368ce33c727cba94bccbde800fbcf30f9fb",
+    "license": "CC0-1.0",
+    "source": "https://www.texturecan.com/details/503/",
+    "used": true
+  },
+  {
+    "file": "fabrics_0073_normal_directx_1k.png",
+    "bytes": 5219045,
+    "sha256": "3cbb2413c5aea04899e31b603dd38c14b395e5b24d41de240d74ca361de13c23",
+    "license": "CC0-1.0",
+    "source": "https://www.texturecan.com/details/503/",
+    "used": false
+  },
+  {
+    "file": "fabrics_0073_normal_opengl_1k.png",
+    "bytes": 5219306,
+    "sha256": "7468c678b439d8646a6204a6ec0466f460042f8006679b83dd472ec6c11480c6",
+    "license": "CC0-1.0",
+    "source": "https://www.texturecan.com/details/503/",
+    "used": true
+  },
+  {
+    "file": "fabrics_0073_roughness_1k.jpg",
+    "bytes": 106721,
+    "sha256": "3f2acd0ea1c4ec569c6ce6834159a98d032437384b6e3cd488b4b02683589a12",
+    "license": "CC0-1.0",
+    "source": "https://www.texturecan.com/details/503/",
+    "used": true
+  },
+  {
+    "file": "Leather037_1K-JPG_Color.jpg",
+    "bytes": 583727,
+    "sha256": "e1033ea8a95a313bdd80ea52aa04b1eee9a8934f1c695430408dacfc8636cc1a",
+    "license": "CC0-1.0",
+    "source": "https://ambientcg.com/view?id=Leather037",
+    "used": false
+  },
+  {
+    "file": "Leather037_1K-JPG_NormalGL.jpg",
+    "bytes": 1820470,
+    "sha256": "b0684254670e067d88fa89d04b1dabb832e4652246c7e3878604c713eecd50f7",
+    "license": "CC0-1.0",
+    "source": "https://ambientcg.com/view?id=Leather037",
+    "used": true
+  },
+  {
+    "file": "Leather037_1K-JPG_Roughness.jpg",
+    "bytes": 728299,
+    "sha256": "b67300743ff88fe4aafd0d303997d9acaa7f2f730262a3079814d5b673721e46",
+    "license": "CC0-1.0",
+    "source": "https://ambientcg.com/view?id=Leather037",
+    "used": true
+  },
+  {
+    "file": "studio_small_03_2k.hdr",
+    "bytes": 6673807,
+    "sha256": "156c2946a6cd0c1d8b662cd97e8a492436331ec2418a33901a324f4420618076",
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/studio_small_03",
+    "used": true
+  }
+]
